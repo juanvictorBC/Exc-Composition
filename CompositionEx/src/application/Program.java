@@ -50,7 +50,7 @@ public class Program {
 		System.out.print("How many items to this order? ");
 		int n = sc.nextInt();
 		for (int i = 1; i <= n; i++) {
-			System.out.println("Enter #" + i + "item data:");
+			System.out.println("Enter #" + i + " item data:");
 			System.out.print("Product name: ");
 			sc.nextLine();
 			String productName = sc.nextLine();
@@ -67,6 +67,9 @@ public class Program {
 			order.addItem(orderItem);
 		}
 		
+		System.out.println();
+		System.out.println("ORDER SUMMARY: ");
+		System.out.println(order);
 		
 
 		sc.close();
